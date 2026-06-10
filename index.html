@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>116年(115學年度)重補修「對開科目」優化方案與意願調查</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 引入 Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        .bg-gradient-header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        /* 自定義表格滾動條 */
+        .table-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .table-container::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 4px;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#3b82f6',
+                        accent: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased pb-20">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-header text-white shadow-lg">
+        <div class="max-w-5xl mx-auto px-4 py-10 md:py-16">
+            <div class="flex items-center gap-3 mb-4 text-blue-200">
+                <i class="ph-fill ph-shield-check text-2xl"></i>
+                <span class="font-medium tracking-wider text-sm md:text-base">教務處提案說明</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
+                116年(115學年度)重補修「對開科目」<br class="hidden md:block">優化方案與討論
+            </h1>
+            <p class="text-lg md:text-xl text-blue-100 max-w-3xl leading-relaxed">
+                為優化學生學習銜接並兼顧校務運作效能，本校重補修制度正進行階段性轉型，期能達成減輕教師負擔並兼顧學生重補修權益。
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 -mt-8 relative z-10">
+       
+        <!-- Section 2: 真實數據與趨勢分析 -->
+        <section class="bg-white rounded-2xl shadow-xl p-6 md:p-8 mb-10 border border-slate-100">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-6 border-b border-slate-200 pb-4 gap-4">
+                <div class="flex items-center gap-3">
+                    <i class="ph-fill ph-chart-line-up text-3xl text-blue-600"></i>
+                    <h2 class="text-2xl font-bold text-slate-800">歷年對開科目人數波動實證</h2>
+                </div>
+                <div class="bg-rose-100 text-rose-700 px-3 py-1.5 rounded-md text-sm font-bold flex items-center gap-2">
+                    <i class="ph-fill ph-warning-circle"></i> 沒開成 = 5人(含)以下
+                </div>
+            </div>
+            
+            <p class="text-slate-600 mb-4">
+                教務處彙整了近三年對開科目的實際報名與意願調查數據。請注意：**「115年僅為意願登記，實際報名人數往例都會再打折（降低）」**。
+            </p>
+
+            <div class="table-container overflow-x-auto rounded-lg border border-slate-200 mb-6">
+                <table class="w-full text-left min-w-[700px]">
+                    <thead class="bg-slate-100 text-slate-700">
+                        <tr>
+                            <th class="p-3 border-b font-bold w-1/4">科目名稱</th>
+                            <th class="p-3 border-b font-bold text-center">113年實際報名</th>
+                            <th class="p-3 border-b font-bold text-center">114年實際報名</th>
+                            <th class="p-3 border-b font-bold text-center bg-blue-50 text-blue-800">115年意願登記 (尚未打折)</th>
+                            <th class="p-3 border-b font-bold">數據分析</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <!-- 開課率極低 -->
+                        <tr class="hover:bg-rose-50/50 transition-colors">
+                            <td class="p-3 border-b font-bold text-slate-800">桃花源-埤塘學</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">沒開成</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">沒開成</td>
+                            <td class="p-3 border-b text-center bg-blue-50/50"><span class="bg-rose-100 text-rose-700 px-2 py-0.5 rounded font-bold">3 人</span></td>
+                            <td class="p-3 border-b text-slate-600 text-xs">連年 5人(含)以下，115年預計也開不成。</td>
+                        </tr>
+                        <tr class="hover:bg-rose-50/50 transition-colors">
+                            <td class="p-3 border-b font-bold text-slate-800">家政 2</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">2 人</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">沒開成</td>
+                            <td class="p-3 border-b text-center bg-blue-50/50"><span class="bg-rose-100 text-rose-700 px-2 py-0.5 rounded font-bold">2 人</span></td>
+                            <td class="p-3 border-b text-slate-600 text-xs">長年人數低，115年預計也不會開成。</td>
+                        </tr>
+                        <!-- 波動較大科目 -->
+                        <tr class="hover:bg-amber-50/50 transition-colors">
+                            <td class="p-3 border-b font-bold text-slate-800">生活科技</td>
+                            <td class="p-3 border-b text-center font-bold text-amber-600">10 人</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">4 人</td>
+                            <td class="p-3 border-b text-center bg-blue-50/50"><span class="bg-rose-100 text-rose-700 px-2 py-0.5 rounded font-bold">3 人</span></td>
+                            <td class="p-3 border-b text-slate-600 text-xs">從10人直降至3人，波動極大。</td>
+                        </tr>
+                        <tr class="hover:bg-amber-50/50 transition-colors">
+                            <td class="p-3 border-b font-bold text-slate-800">健康與護理</td>
+                            <td class="p-3 border-b text-center font-bold text-amber-600">10 人</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">沒開成</td>
+                            <td class="p-3 border-b text-center bg-blue-50/50"><span class="bg-rose-100 text-rose-700 px-2 py-0.5 rounded font-bold">3 人</span></td>
+                            <td class="p-3 border-b text-slate-600 text-xs">一年開成、一年開不成，但原則最多是自學班。</td>
+                        </tr>
+                        <tr class="hover:bg-amber-50/50 transition-colors">
+                            <td class="p-3 border-b font-bold text-slate-800">高一 化學</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">4 人</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">2 人</td>
+                            <td class="p-3 border-b text-center bg-blue-50/50"><span class="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded font-bold">20 人</span></td>
+                            <td class="p-3 border-b text-slate-600 text-xs">意願雖高，但過往兩年報名皆未達標。（不確定衝堂減少後會不會成班）</td>
+                        </tr>
+                        <!-- 學生重補修報名意願較低的科目 (6-9人意願) -->
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="p-3 border-b font-bold text-slate-800">地球科學 1</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">2 人</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">1 人</td>
+                            <td class="p-3 border-b text-center bg-blue-50/50"><span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded font-bold">6 人</span></td>
+                            <td class="p-3 border-b text-slate-600 text-xs">今年意願登記剛好在邊緣，實際報名若打折極可能跌回 5人(含)以下。</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="p-3 border-b font-bold text-slate-800">生涯規劃</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">4 人</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">3 人</td>
+                            <td class="p-3 border-b text-center bg-blue-50/50"><span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded font-bold">6 人</span></td>
+                            <td class="p-3 border-b text-slate-600 text-xs">同上，若分散梯次基本開不成。</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="p-3 border-b font-bold text-slate-800">符號與科學 2</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">5 人</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">沒開成</td>
+                            <td class="p-3 border-b text-center bg-blue-50/50"><span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded font-bold">8 人</span></td>
+                            <td class="p-3 border-b text-slate-600 text-xs">過往皆在淘汰邊緣。</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="p-3 border-b font-bold text-slate-800">高二 公民與社會</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">5 人</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">沒開成</td>
+                            <td class="p-3 border-b text-center bg-blue-50/50"><span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded font-bold">9 人</span></td>
+                            <td class="p-3 border-b text-slate-600 text-xs">過往皆在淘汰邊緣。</td>
+                        </tr>
+                        <!-- 穩定群 -->
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="p-3 border-b font-bold text-slate-800">高一 物理</td>
+                            <td class="p-3 border-b text-center font-bold text-amber-600">9 人</td>
+                            <td class="p-3 border-b text-center font-bold text-amber-600">6 人</td>
+                            <td class="p-3 border-b text-center bg-blue-50/50"><span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded font-bold">11 人</span></td>
+                            <td class="p-3 border-b text-slate-600 text-xs">穩定具備自學班規模。</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="p-3 border-b font-bold text-slate-800">生命教育</td>
+                            <td class="p-3 border-b text-center font-bold text-amber-600">9 人</td>
+                            <td class="p-3 border-b text-center text-rose-600 font-bold">4 人</td>
+                            <td class="p-3 border-b text-center bg-blue-50/50"><span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded font-bold">12 人</span></td>
+                            <td class="p-3 border-b text-slate-600 text-xs">波動尚在可控範圍。</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="p-3 border-b font-bold text-slate-800">高一 生物</td>
+                            <td class="p-3 border-b text-center font-bold text-emerald-600">17 人</td>
+                            <td class="p-3 border-b text-center font-bold text-amber-600">12 人</td>
+                            <td class="p-3 border-b text-center bg-blue-50/50"><span class="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded font-bold">17 人</span></td>
+                            <td class="p-3 border-b text-slate-600 text-xs">最穩定的專班/大型自學班潛力科目。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="bg-teal-100 p-3 rounded-lg text-teal-600">
+                    <i class="ph ph-scales text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">核心議題討論：重補修開課方案比較</h2>
+            </div>
+
+            <!-- 垂直寬幅版面：讓每個方案都有充足的左右寬度，閱讀極為舒適 -->
+            <div class="flex flex-col gap-10">
+                
+                <!-- 選項 A -->
+                <div class="bg-white rounded-2xl shadow-md border-2 border-primary overflow-hidden flex flex-col transform hover:-translate-y-0.5 transition-transform">
+                    <div class="bg-primary py-5 px-6 md:px-8 text-white">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+                            <h3 class="text-xl md:text-2xl font-bold tracking-wide">選項 A：對開科目與過往相同，集中一年一開（開在隔年夏季班）</h3>
+                            <span class="bg-white/20 text-blue-100 text-xs px-3 py-1 rounded-full font-medium self-start md:self-auto">全年僅調查一次</span>
+                        </div>
+                        <p class="text-blue-100 text-sm md:text-base mt-2 leading-relaxed">特定科目固定於夏季辦理。</p>
+                    </div>
+                    <div class="p-6 md:p-8 flex-grow">
+                        <div>
+                            <h4 class="text-primary font-bold flex items-center gap-2 mb-4 text-lg border-b border-slate-100 pb-2">
+                                <i class="ph ph-article text-xl"></i> 方案特點與實務評估
+                            </h4>
+                            <ul class="space-y-4">
+                                <li class="flex items-start gap-3 text-slate-700 bg-blue-50/50 p-4 rounded-xl leading-relaxed text-sm md:text-base">
+                                    <i class="ph ph-arrow-right text-blue-500 mt-1 text-lg flex-shrink-0"></i>
+                                    <span><strong>有效集中有修課需求的學生：</strong>對於往年較少人報名的科目（如地科、生涯規劃、符號與科學等），能將兩學期的零星意願集中。即便實際繳費人數因打折效應減少，仍可保底達 6 人以上之開班門檻，保障學生的修課與重修權益。</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-slate-700 bg-blue-50/50 p-4 rounded-xl leading-relaxed text-sm md:text-base">
+                                    <i class="ph ph-arrow-right text-blue-500 mt-1 text-lg flex-shrink-0"></i>
+                                    <span><strong>穩定教師預期心理：</strong>本制度實施後，即可明確掌握固定開班之學科與開課季節，便於各學科教學研究會及早規劃授課人力，無需每學期安排教師進行無預期排課輪值。</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 選項 B -->
+                <div class="bg-white rounded-2xl shadow-md border-2 border-slate-500 overflow-hidden flex flex-col transform hover:-translate-y-0.5 transition-transform">
+                    <div class="bg-slate-600 py-5 px-6 md:px-8 text-white">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+                            <h3 class="text-xl md:text-2xl font-bold tracking-wide">選項 B：隨學期拆開</h3>
+                            <span class="bg-white/20 text-slate-200 text-xs px-3 py-1 rounded-full font-medium self-start md:self-auto">配合不及格梯次開放</span>
+                        </div>
+                        <p class="text-slate-200 text-sm md:text-base mt-2 leading-relaxed">每學期皆配合學生不及格梯次開放調查，維持原有分散開設機制。</p>
+                    </div>
+                    <div class="p-6 md:p-8 flex-grow">
+                        <div>
+                            <h4 class="text-slate-700 font-bold flex items-center gap-2 mb-4 text-lg border-b border-slate-100 pb-2">
+                                <i class="ph ph-article text-xl"></i> 方案特點與實務評估
+                            </h4>
+                            <ul class="space-y-4">
+                                <li class="flex items-start gap-3 text-slate-700 bg-slate-50 p-4 rounded-xl leading-relaxed text-sm md:text-base">
+                                    <i class="ph ph-arrow-right text-slate-500 mt-1 text-lg flex-shrink-0"></i>
+                                    <span><strong>配合學習節奏與習慣：</strong>學生得於學期結束不及格後立即申請重修，修課時效較即時；惟意願人數極易分散，在打折效應影響下，部分科目（單學期意願 6–9 人者）常因未達門檻而被迫裁撤，造成學生最終仍無課可修。</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-slate-700 bg-slate-50 p-4 rounded-xl leading-relaxed text-sm md:text-base">
+                                    <i class="ph ph-arrow-right text-slate-500 mt-1 text-lg flex-shrink-0"></i>
+                                    <span><strong>回歸基本授課時數：</strong>若這些科目最終因報名人數不足而未予成班開課，相關學科教師亦無須額外支援重補修之授課，可有效減低教學現場之授課負擔與負擔。</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 方案 C -->
+                <div class="bg-white rounded-2xl shadow-md border-2 border-indigo-600 overflow-hidden flex flex-col transform hover:-translate-y-0.5 transition-transform">
+                    <div class="bg-indigo-600 py-5 px-6 md:px-8 text-white">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+                            <h3 class="text-xl md:text-2xl font-bold tracking-wide">方案 C：意願普查與彈性分流配對</h3>
+                            <span class="bg-white/20 text-indigo-100 text-xs px-3 py-1 rounded-full font-medium self-start md:self-auto">教務處推薦</span>
+                        </div>
+                        <p class="text-indigo-100 text-sm md:text-base mt-2 leading-relaxed">依據學科普查結果統籌，將期望集中開課之科目進行冬/夏季班分流配置。</p>
+                    </div>
+                    <div class="p-6 md:p-8 flex-grow">
+                        <div>
+                            <h4 class="text-indigo-700 font-bold flex items-center gap-2 mb-4 text-lg border-b border-indigo-100 pb-2">
+                                <i class="ph ph-article text-xl"></i> 方案特點與實務評估
+                            </h4>
+                            <ul class="space-y-4">
+                                <li class="flex items-start gap-3 text-slate-700 bg-indigo-50 p-4 rounded-xl leading-relaxed text-sm md:text-base">
+                                    <i class="ph ph-arrow-right text-indigo-500 mt-1 text-lg flex-shrink-0"></i>
+                                    <span><strong>尊重學科專業自主權：</strong>考量實際人力分配問題，由【自然科與社會科各小科】及【高一、高二對開科目老師】(通常為藝能科或校定必修)自主評估，選擇要維持「分學期分散」或「集中單一學期」開設。若選分散則跟隨大方向；若選集中，則由教務處統籌安排。</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-slate-700 bg-indigo-50 p-4 rounded-xl leading-relaxed text-sm md:text-base">
+                                    <i class="ph ph-arrow-right text-indigo-500 mt-1 text-lg flex-shrink-0"></i>
+                                    <span><strong>跨科彈性分流調配：</strong>對於有意願集中之學科，協助分流至夏季班或冬季班。例如：若生物與化學科皆有集中共識，可採「高一生物 + 埤塘學」固定於夏季班，「高一化學 + 家政」固定於冬季班辦理，在保障開班率的同時調配彈性。</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+<!-- 延伸配套與校務細項思考 -->
+        <section class="mb-20">
+            <div class="bg-slate-50 border border-slate-200 p-6 md:p-8 rounded-2xl shadow-sm">
+                <div class="flex items-center gap-3 mb-6 border-b border-slate-200 pb-4">
+                    <div class="bg-slate-200 text-slate-700 p-2 rounded-lg flex-shrink-0">
+                        <i class="ph ph-file-search text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-slate-800 tracking-wide">🔍 延伸配套與校務細項思考</h3>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- 細項一 -->
+                    <div class="flex items-start gap-3">
+                        <span class="bg-slate-200 text-slate-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold mt-1 flex-shrink-0">1</span>
+                        <div>
+                            <h4 class="font-bold text-slate-800 text-base md:text-lg mb-1">主科與高授課時數科目（如英、數）之梯次分流策略</h4>
+                            <p class="text-slate-600 leading-relaxed text-sm md:text-base">
+                                原則上英、數等高需求考科皆不免須開設面授專班。然而，考量寒假天數較為短暫，而英、數專班時數多達24節，老師們不一定願意開設在學期中。若集中寒假開課，同樣將導致學生面臨無法分散選課與消化學習之困境。
+                            </p>
+                            <p class="text-slate-600 leading-relaxed text-sm md:text-base mt-2">
+                                為此，教務處建議各科授課教師可評估採取<strong>「分散開設兩班自學班」</strong>之彈性配套：相較於實體專班，此模式僅需進行一半的面授節數，其餘時數則輔以指定自讀教材與評量設計。此作法一方面可提供學生更多元的時段搭配，另一方面亦能有效調配教師的授課負擔。但也可能當年被當人數偏多，出動2-3名人力仍舊是專班就無解。(註：此安排僅為教務處之實務建議，具體執行方式將完全尊重各學科研究會與教師之自主意願。)
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 細項二 -->
+                    <div class="flex items-start gap-3 border-t border-slate-100 pt-6">
+                        <span class="bg-slate-200 text-slate-700 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold mt-1 flex-shrink-0">2</span>
+                        <div>
+                            <h4 class="font-bold text-slate-800 text-base md:text-lg mb-1">研議放寬或廢除重補修班級人數上限（40人）限制</h4>
+                            <p class="text-slate-600 leading-relaxed text-sm md:text-base">
+                                依現行作業辦法，重補修每班學生人數明定以 40 人為上限。以本年度數學科為例，因重修需求高達 100 餘人，依規須拆分為三班開設，在教學人力與排課資源上皆面臨高度負荷。
+                            </p>
+                            <p class="text-slate-600 leading-relaxed text-sm md:text-base mt-2">
+                                為了提升行政與資源效益，後續是否研議修正作業辦法，放寬或廢除此一硬性上限？若學科教師有意願挑戰大班制授課，教務處將全力協助提供硬體配套（如大講堂或遠距投影設備支援），並在制度上充分尊重授課教師的意願與專業考量，賦予教學現場更多彈性。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 額外附加行政作業說明（放在蒐集意見前和方案C後） -->
+<section class="mb-20">
+    <div class="bg-amber-50 border-l-4 border-amber-500 p-6 md:p-8 rounded-r-xl shadow-sm">
+        <div class="flex items-start gap-4">
+            <div class="bg-amber-100 text-amber-800 p-2.5 rounded-lg flex-shrink-0">
+                <i class="ph ph-info text-2xl"></i>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-lg md:text-xl font-bold text-amber-950 tracking-wide">💡 行政作業補充說明</h4>
+                <p class="text-amber-900/90 leading-relaxed text-sm md:text-base tracking-wide">
+                    本次校務會議提案將著重於<strong>「重補修大方向制度」（即傳統規定在7-8月開課改成上、下學期多數科目分流）之審議與定案</strong>。由於校級重補修規範僅針對宏觀大制度進行規範，至於各學科具體開設之梯次，皆屬於<strong>教務行政之作業辦法與執行細則</strong>，無須於校務會議中先行定案。
+                </p>
+                <p class="text-amber-900/90 leading-relaxed text-sm md:text-base tracking-wide">
+                    待大方向制度通過後，相關執行細則可留待事後討論。教務處將持續蒐集各學科意見，在尊重學科專業的前提下，盡最大努力協調出最完善、最符合師生雙贏的排課安排。
+                </p>
+                
+                <!-- 新增：不同顏色強調的關鍵投票考量 -->
+                <div class="bg-rose-50/80 border-l-4 border-rose-400 p-4 rounded-r-lg mt-4 text-rose-950 text-sm md:text-base leading-relaxed">
+                    <strong class="text-rose-800">📌 老師們的核心考量：</strong><br class="hidden md:block"/>
+                    但這些細項，仍是老師們評估「是否投下贊成票」的重要考量（例如：新制通過後，若無法妥善分流怎麼辦？或是科目人力較少的老師們真的得要開設好幾次重補修該怎麼辦？）。
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Section 4: 意見蒐集區塊 (行動呼籲) -->
+        <section class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl shadow-xl p-8 text-center text-white">
+            <h2 class="text-2xl font-bold mb-4">意見蒐集</h2>
+            <p class="text-slate-300 mb-8 max-w-2xl mx-auto">
+                請老師們針對上述「選項A / B / C」及「科目分流」考量後填寫下方表單。
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <!-- 這裡可以替換成實際的 Google 表單連結 -->
+                <a href="https://forms.gle/1cVQfWpGnLUnhhFc6"; return false;" class="bg-secondary hover:bg-blue-400 text-white font-bold py-3 px-8 rounded-lg transition-all shadow-lg hover:shadow-blue-500/30 flex items-center justify-center gap-2">
+                    <i class="ph-fill ph-clipboard-text text-xl"></i>
+                    填寫意見蒐集表單
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
